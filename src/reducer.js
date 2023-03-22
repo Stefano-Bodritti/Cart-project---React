@@ -1,5 +1,10 @@
 const reducer = (state, action) => {
-  return state;
+
+  if (action.type === "CLEAR_CART") {
+    return {...state, cart: []}
+  }
+  
+  return state
 }
 
 export default reducer;
